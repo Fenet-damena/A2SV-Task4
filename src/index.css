@@ -86,3 +86,23 @@ body {
   font-style: italic;
   color: #aaa;
 }
+.no-task-message {
+  margin: 2rem auto;
+  text-align: center;
+  background-color: #222;
+  border: 1px dashed #999;
+  padding: 2rem;
+  width: 80%;
+  min-height: 120px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  color: #bbb;
+}
+.todo-input {
+  margin-bottom: 4rem; 
+}
+.filters {
+  margin-top: 10rem;
+}
+
+

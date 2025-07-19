@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { toast } from 'react-toastify';
 
 interface Props {
   onAdd: (title: string, dueDate: string) => void;
@@ -8,10 +7,12 @@ interface Props {
 const TodoInput = ({ onAdd }: Props) => {
   const [title, setTitle] = useState('');
   const [dueDate, setDueDate] = useState('');
+  const [error, setError] = useState('');
 
   const submit = () => {
     if (!title.trim() || !dueDate) {
-      toast.error('Please enter both task name and due date');
+      setError('Please enter both task and due date.');
+      setTimeout(() => setError(''), 3000);
       return;
     }
 
@@ -36,6 +37,7 @@ const TodoInput = ({ onAdd }: Props) => {
       <div style={{ marginTop: '10px' }}>
         <button onClick={submit}>+ Add Task</button>
       </div>
+      {error && <p style={{ color: 'tomato', marginTop: '10px' }}>{error}</p>}
     </div>
   );
 };

@@ -1,8 +1,3 @@
-Here is an updated and detailed `README.md` file that includes **vertical screenshots** layout and **separate descriptions** for each feature:
-
----
-
-````markdown
 # 📝 Todo List App (React + TypeScript)
 
 This is a **modern and interactive Todo List app** built using React, TypeScript, and Vite. It supports **task creation, editing, deletion, filtering**, and uses **localStorage** to persist data across page reloads.
